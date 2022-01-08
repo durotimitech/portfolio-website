@@ -42,21 +42,21 @@ const Hero = () => {
     if (elementInView) setCurrentSection(sections.HERO);
   }, [elementInView, setCurrentSection]);
 
-  useEffect(() => {
-    imageRevealInit();
-  });
+  // useEffect(() => {
+  //   imageRevealInit();
+  // });
   
-  useEffect(() => {
-    animations();
-  }, []);
+  // useEffect(() => {
+  //   animations();
+  // }, []);
 
   return (
     <div id="hero" className="container">
       <section ref={targetSection} className={classes.hero}>
         <div className={classes.hero__info}>
           <span ref={nameItem} className={`${classes.hero__name} fs-xxl`}>
-            <span className="hello"></span>
-            <span className="primary"></span>
+            <span className="hello">Hi! I&apos;m</span>
+            <span className="primary"> Mejabi Durotimi</span>
             <span ref={cursorItem}>_</span>
           </span>
           <div className={classes.hero__more}>
