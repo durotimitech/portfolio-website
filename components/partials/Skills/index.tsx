@@ -17,7 +17,6 @@ const Skills = () => {
 
   useEffect(() => {
     if (elementInView) {
-      
       Animations.fadeInUpStaggeredWithVisibility(targetSection.current);
       Animations.fadeInUpStaggered(skillsTarget.current, 1);
     }
@@ -39,6 +38,7 @@ const Skills = () => {
           {mySkills.map((skill) => (
             <div key={skill.name}>
               <Image
+                alt={skill.name}
                 className={classes.tech__stack__skill}
                 src={skill.src}
                 preview={false}

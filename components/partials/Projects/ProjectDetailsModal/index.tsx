@@ -41,32 +41,32 @@ const ProjectDetailsModal: React.FC<IProps> = ({
           <br />
           <div className="primary fs-lg">Technologies Used</div>
           {technologiesUsed.map((tech) => (
-            <span>{tech}</span>
+            <span key={tech}>{tech}</span>
           ))}
           <br />
           <br />
           <div className="primary fs-lg">What I learned</div>
           <ul>
             {lessonsLearned.map((lesson) => (
-              <ol>{lesson}</ol>
+              <ol key={lesson}>{lesson}</ol>
             ))}
           </ul>
           <br />
           <div className="primary fs-lg">Future Improvements</div>
           <ul>
             {improvements.map((task) => (
-              <li>{task}</li>
+              <li key={task}>{task}</li>
             ))}
           </ul>
           <div className={classes.modal__footer}>
             <div className={classes.modal__footer__links}>
               <button className="btn">
-                <a target={"_blank"} href={liveLink}>
+                <a target={"_blank"} href={liveLink} rel="noreferrer">
                   Live Link
                 </a>
               </button>
               <button className="btn">
-                <a target={"_blank"} href={github}>
+                <a target={"_blank"} href={github} rel="noreferrer">
                   Github
                 </a>
               </button>

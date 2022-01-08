@@ -46,12 +46,10 @@ const Projects = () => {
   };
 
   useEffect(() => {
-    if (elementInView) {
-      setCurrentSection(sections.PROJECTS);
-      // Animations.fadeInUpStaggeredWithVisibility(targetSection.current);
-    }
+    if (elementInView) setCurrentSection(sections.PROJECTS);
+    
     ProjectAnimations.infiniteBounce(projectDemoItem.current);
-  }, [elementInView]);
+  }, [elementInView, setCurrentSection]);
 
   useEffect(() => {
     if (elementInView)
@@ -61,7 +59,10 @@ const Projects = () => {
   return (
     <section id="projects" className="section bg-light">
       {isModalVisible && (
-        <ProjectDetailsModal setIsModalVisible={setIsModalVisible} project={project} />
+        <ProjectDetailsModal
+          setIsModalVisible={setIsModalVisible}
+          project={project}
+        />
       )}
       <div
         ref={targetSection}
@@ -78,6 +79,7 @@ const Projects = () => {
         <div className={classes.row}>
           <div ref={projectDemoItem}>
             <Image
+              alt="Project Demo"
               className={classes.project__demo__gif}
               preview={false}
               src={project.demo}

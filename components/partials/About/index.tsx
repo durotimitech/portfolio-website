@@ -19,7 +19,7 @@ const About = () => {
       setCurrentSection(sections.ABOUT);
       Animations.fadeInUpStaggeredWithVisibility(targetSection.current);
     }
-  }, [elementInView]);
+  }, [elementInView, setCurrentSection]);
 
   return (
     <section id="about" className="section">
@@ -34,13 +34,14 @@ const About = () => {
         </div>
         <div className={classes.about__content}>
           <Image
+            alt="Avatar"
             className={classes.avatar}
             preview={false}
             src="/images/avatar.jpg"
           />
           <div className={classes.about__info}>
-            I'm <span className="primary">Oluwadurotimi Mejabi</span>, a 23 year
-            old software engineer from Nigeria. <br />
+            I&apos;m <span className="primary">Oluwadurotimi Mejabi</span>, a 23
+            year old software engineer from Nigeria. <br />
             I have been interested in tech, especially software development for
             many years right from when I was about 14 years old.
             <br />
@@ -50,7 +51,7 @@ const About = () => {
             <br />
             <div>
               When I am not coding, or trying to solve a problem 😉 ( cuz
-              there's always problems to solve), I make
+              there&apos;s always problems to solve), I make
               <span className="primary"> films </span>
               and take pictures.
             </div>

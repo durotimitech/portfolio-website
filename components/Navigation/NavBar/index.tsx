@@ -109,7 +109,7 @@ const NavBar = () => {
           />
         </a>
 
-        <a href={externalLinks.GITHUB} target="_blank">
+        <a href={externalLinks.GITHUB} target="_blank" rel="noreferrer">
           <GithubOutlined className={`link fs-lg`} />
         </a>
       </div>

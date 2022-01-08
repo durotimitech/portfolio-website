@@ -40,9 +40,12 @@ const Hero = () => {
 
   useEffect(() => {
     if (elementInView) setCurrentSection(sections.HERO);
-    imageRevealInit();
-  }, [elementInView]);
+  }, [elementInView, setCurrentSection]);
 
+  useEffect(() => {
+    imageRevealInit();
+  });
+  
   useEffect(() => {
     animations();
   }, []);
@@ -67,7 +70,7 @@ const Hero = () => {
               <a href="#projects">
                 <button className="btn btn-filled">Check out my work</button>
               </a>
-              <a href={externalLinks.CV} target={"_blank"}>
+              <a href={externalLinks.CV} target={"_blank"} rel="noreferrer">
                 <span>View Resume</span>
               </a>
             </div>

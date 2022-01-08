@@ -23,7 +23,7 @@ const Connect = () => {
       setCurrentSection(sections.CONNECT);
       Animations.fadeInUpStaggeredWithVisibility(targetSection.current);
     }
-  }, [elementInView]);
+  }, [elementInView,setCurrentSection]);
 
   return (
     <section id="connect" className="section">
@@ -46,11 +46,11 @@ const Connect = () => {
         <footer className={classes.footer}>
           <div className="fs-md">© 2021 Oluwadurotimi Mejabi</div>
           <div className={classes.footer__socials}>
-            <a href={externalLinks.LINKEDIN} target={"_blank"}>
+            <a href={externalLinks.LINKEDIN} target={"_blank"} rel="noreferrer">
               <LinkedinOutlined className="fs-l" />
             </a>
 
-            <a target={"_blank"} href={externalLinks.GITHUB}>
+            <a target={"_blank"} href={externalLinks.GITHUB} rel="noreferrer">
               <GithubOutlined className="fs-l" />
             </a>
           </div>
