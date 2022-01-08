@@ -1,0 +1,12 @@
+- Remove all states/logic to hooks (There should be no useState in UI components)
+- Add more proejcts and add pop up for projects info
+- Remove <br /. and use margins instead
+
+
+Portfolio Tips
+1. Keep it at max of 10 projects
+
+2. Share Your Motivations
+you can take your Web Developer portfolio to the next level by drawing people in with explanations of how those projects and websites came to life.
+
+What inspired you? What hurdles did you overcome? And how did you use programming languages to bring your vision to life?

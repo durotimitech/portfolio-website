@@ -1,0 +1,24 @@
+.skills__section{
+  visibility: hidden;
+}
+.tech__stack {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  margin: 2rem 0;
+}
+.tech__stack__skill {
+  height: 35px;
+}
+
+.tech__stack__skill:hover {
+  transform: scale(1.2);
+  transition: 0.5s ease;
+}
+
+@media only screen and (min-width: 768px) {
+  .tech__stack {
+    grid-template-columns: repeat(7, 1fr);
+    gap: 1rem;
+  }
+}

@@ -1,0 +1,14 @@
+.connect__section {
+  visibility: hidden;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  margin: 5rem 0 1rem 0;
+}
+
+.footer__socials {
+  display: flex;
+  gap: 1rem;
+}

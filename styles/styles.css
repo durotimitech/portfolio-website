@@ -1,0 +1,186 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital@1&display=swap");
+
+/* BASIC CONFIG */
+:root {
+  --bg-color: #1d1d20;
+  --bg-color-transparent: #1d1d20e3;
+  --bg-color-light: #262628;
+  --primary: #ff914d;
+  --primary-light: #ff914d98;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* GENERAL */
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-color: var(--bg-color);
+  font-family: "Roboto Mono", monospace;
+  color: white;
+  overflow-x: hidden;
+}
+
+.link:hover {
+  color: rgb(165, 162, 162);
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+input {
+  background: var(--bg-color-light);
+  border: none;
+  width: 100%;
+  padding: 1rem;
+  margin: 1rem 0;
+}
+input:active {
+}
+textarea {
+  background: var(--bg-color-light);
+  border: none;
+  width: 100%;
+  margin: 1rem 0;
+  padding: 1rem;
+}
+
+/* COLORS */
+.primary {
+  color: var(--primary);
+}
+.bg-primary {
+  background-color: var(--primary);
+}
+
+.bg-light {
+  background-color: var(--bg-color-light);
+}
+
+/* FONT SIZES */
+.fs-sm {
+  font-size: 0.5rem;
+}
+.fs-md {
+  font-size: 0.8rem;
+}
+.fs-lg {
+  font-size: 1.2rem;
+}
+.fs-xl {
+  font-size: 2rem;
+}
+.fs-xxl {
+  font-size: 2.5rem;
+}
+
+/* UTILITIES */
+.container {
+  max-width: 600px;
+  padding: 0 2rem;
+  margin: auto;
+}
+
+.section {
+  padding: 5rem 0;
+}
+.heading {
+  font-size: 1.2rem;
+}
+
+.heading::before {
+  text-align: center;
+  font-size: 2rem;
+  margin: 3rem 1rem 0 0;
+  color: var(--primary);
+  content: "—";
+}
+
+/* BUTTONS */
+.btn {
+  background: none;
+  border: none;
+  padding: 0.5rem 0.5rem;
+  color: white;
+  cursor: pointer;
+  border: 1px solid var(--primary-light);
+}
+.btn:hover {
+  background-color: var(--primary);
+  transition: 0.5s ease;
+}
+
+.btn-filled {
+  background-color: var(--primary);
+}
+
+.btn-filled:hover {
+  background: none;
+  border: 1px solid var(--primary-light);
+  transition: 0.5s ease;
+}
+
+.btn-row {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .container {
+    max-width: 900px;
+  }
+  .fs-xxl {
+    font-size: 2.3rem;
+  }
+  .hero__avatar {
+    display: inline-block !important;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .container {
+    max-width: 1000px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  /* .container {
+    max-width: 1440px;
+  } */
+}
+
+/* Hero */
+.hero__avatar {
+  display: none;
+  height: 300px;
+  width: 300px;
+  border-radius: 10%;
+  position: relative;
+  overflow: hidden;
+}
+.hero__avatar::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  background-color: var(--bg-color);
+}
+
+.hero__avatar__img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: rotate(20deg);
+}
