@@ -35,7 +35,7 @@ class HeroAnimations {
       .to(element.children[0].children[0], {
         delay: -0.8,
         ease: Power3.easeOut,
-        scale: 1.5,
+        scale: 1.2,
         rotate: "0",
       });
   };

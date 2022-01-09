@@ -16,7 +16,6 @@ const Hero = () => {
   let aboutItem = useRef(null);
   let linksItem = useRef(null);
   let avatarItem = useRef(null);
-  let bgImage: any;
 
   const { elementInView } = useElementInView(targetSection, 0.9);
 
@@ -28,27 +27,24 @@ const Hero = () => {
     HeroAnimations.writeOn(nameItem.current);
     Animations.fadeInUp(aboutItem.current, 6.5, 3);
     Animations.fadeInUpStaggered(linksItem.current, 8);
-    // HeroAnimations.imageReveal(bgImage, avatarItem.current);
   };
-
+  
   const imageRevealInit = () => {
     const GSAP = require("gsap/dist/CSSRulePlugin");
     const { CSSRulePlugin } = GSAP;
     gsap.registerPlugin(CSSRulePlugin);
-    bgImage = CSSRulePlugin.getRule(".hero__avatar::after");
+    const bgImage = CSSRulePlugin.getRule(".hero__avatar::after");
+    bgImage && HeroAnimations.imageReveal(bgImage, avatarItem.current);
   };
 
   useEffect(() => {
-    if (elementInView) setCurrentSection(sections.HERO);
+  if (elementInView) setCurrentSection(sections.HERO)
   }, [elementInView, setCurrentSection]);
 
-  // useEffect(() => {
-  //   imageRevealInit();
-  // });
-  
   useEffect(() => {
+    imageRevealInit();
     animations();
-  },[]);
+  }, []);
 
   return (
     <div id="hero" className="container">
