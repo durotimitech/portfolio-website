@@ -17,8 +17,8 @@ const Skills = () => {
 
   useEffect(() => {
     if (elementInView) {
-      // Animations.fadeInUpStaggeredWithVisibility(targetSection.current);
-      // Animations.fadeInUpStaggered(skillsTarget.current, 1);
+      Animations.fadeInUpStaggeredWithVisibility(targetSection.current);
+      Animations.fadeInUpStaggered(skillsTarget.current, 1);
     }
   }, [elementInView]);
 

@@ -21,7 +21,7 @@ const Connect = () => {
   useEffect(() => {
     if (elementInView) {
       setCurrentSection(sections.CONNECT);
-      // Animations.fadeInUpStaggeredWithVisibility(targetSection.current);
+      Animations.fadeInUpStaggeredWithVisibility(targetSection.current);
     }
   }, [elementInView,setCurrentSection]);
 
