@@ -58,16 +58,16 @@ const Projects = () => {
 
   return (
     <section id="projects" className="section bg-light">
-      {isModalVisible && (
-        <ProjectDetailsModal
-          setIsModalVisible={setIsModalVisible}
-          project={project}
-        />
-      )}
       <div
         ref={targetSection}
         className={`${classes.projects__section} container`}
       >
+        {isModalVisible && (
+          <ProjectDetailsModal
+            setIsModalVisible={setIsModalVisible}
+            project={project}
+          />
+        )}
         <div className="heading">Work</div>
         <div className="fs-xl">
           Some of my
