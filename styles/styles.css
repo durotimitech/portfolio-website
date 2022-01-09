@@ -43,8 +43,7 @@ input {
   padding: 1rem;
   margin: 1rem 0;
 }
-input:active {
-}
+
 textarea {
   background: var(--bg-color-light);
   border: none;
