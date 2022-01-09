@@ -1,5 +1,5 @@
 .modal__bg {
-  height: 100vh;
+  height: 100%;
   width: 100vw;
   position: absolute;
   background-color: var(--bg-color-transparent);
@@ -7,6 +7,7 @@
   justify-content: center;
   align-items: center;
   z-index: 5;
+  left: 0;
 }
 .modal__container {
   background-color: var(--bg-color);
@@ -42,4 +43,10 @@
 .tech {
   background-color: var(--bg-color-light);
   margin-right: 1rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .modal__bg {
+    height: 60vh;
+  }
 }

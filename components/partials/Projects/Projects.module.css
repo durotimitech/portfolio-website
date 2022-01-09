@@ -1,5 +1,7 @@
 .projects__section {
   visibility: hidden;
+  /* height: 100vh; */
+  /* width: 100vw; */
 }
 .row {
   display: flex;
@@ -56,7 +58,6 @@
   text-transform: uppercase;
   padding: 0.5rem;
 }
-
 
 @media only screen and (min-width: 768px) {
   .row {
