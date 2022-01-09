@@ -28,7 +28,7 @@ const Hero = () => {
     HeroAnimations.writeOn(nameItem.current);
     Animations.fadeInUp(aboutItem.current, 6.5, 3);
     Animations.fadeInUpStaggered(linksItem.current, 8);
-    HeroAnimations.imageReveal(bgImage, avatarItem.current);
+    // HeroAnimations.imageReveal(bgImage, avatarItem.current);
   };
 
   const imageRevealInit = () => {
@@ -46,17 +46,19 @@ const Hero = () => {
   //   imageRevealInit();
   // });
   
-  // useEffect(() => {
-  //   animations();
-  // }, []);
+  useEffect(() => {
+    animations();
+  },[]);
 
   return (
     <div id="hero" className="container">
       <section ref={targetSection} className={classes.hero}>
         <div className={classes.hero__info}>
           <span ref={nameItem} className={`${classes.hero__name} fs-xxl`}>
-            <span className="hello">Hi! I&apos;m</span>
-            <span className="primary"> Mejabi Durotimi</span>
+            <span className="hello"></span>
+            {/* <span className="hello">Hi! I&apos;m</span> */}
+            <span className="primary"></span>
+            {/* <span className="primary"> Mejabi Durotimi</span> */}
             <span ref={cursorItem}>_</span>
           </span>
           <div className={classes.hero__more}>
