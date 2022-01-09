@@ -17,7 +17,7 @@ const About = () => {
   useEffect(() => {
     if (elementInView) {
       setCurrentSection(sections.ABOUT);
-      // Animations.fadeInUpStaggeredWithVisibility(targetSection.current);
+      Animations.fadeInUpStaggeredWithVisibility(targetSection.current);
     }
   }, [elementInView, setCurrentSection]);
 

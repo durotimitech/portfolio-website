@@ -1,5 +1,5 @@
 .about__section {
-  /* visibility: hidden; */
+  visibility: hidden;
 }
 .about__content {
   display: flex;
