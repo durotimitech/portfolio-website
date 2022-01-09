@@ -54,7 +54,7 @@ const Projects = () => {
   useEffect(() => {
     if (elementInView)
       Animations.fadeInUpStaggeredWithVisibility(targetSection.current);
-  });
+  },[elementInView]);
 
   return (
     <section id="projects" className="section bg-light">
