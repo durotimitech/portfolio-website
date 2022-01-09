@@ -47,14 +47,14 @@ const Projects = () => {
 
   useEffect(() => {
     if (elementInView) setCurrentSection(sections.PROJECTS);
-    
-    // ProjectAnimations.infiniteBounce(projectDemoItem.current);
+
+    ProjectAnimations.infiniteBounce(projectDemoItem.current);
   }, [elementInView, setCurrentSection]);
 
-  // useEffect(() => {
-  //   if (elementInView)
-  //     Animations.fadeInUpStaggeredWithVisibility(targetSection.current);
-  // });
+  useEffect(() => {
+    if (elementInView)
+      Animations.fadeInUpStaggeredWithVisibility(targetSection.current);
+  });
 
   return (
     <section id="projects" className="section bg-light">

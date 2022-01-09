@@ -41,7 +41,9 @@ const ProjectDetailsModal: React.FC<IProps> = ({
           <br />
           <div className="primary fs-lg">Technologies Used</div>
           {technologiesUsed.map((tech) => (
-            <span key={tech}>{tech}</span>
+            <span key={tech} className={classes.tech}>
+              {tech}
+            </span>
           ))}
           <br />
           <br />

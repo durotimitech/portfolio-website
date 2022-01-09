@@ -38,3 +38,8 @@
   display: flex;
   gap: 1rem;
 }
+
+.tech {
+  background-color: var(--bg-color-light);
+  margin-right: 1rem;
+}

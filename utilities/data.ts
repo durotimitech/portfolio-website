@@ -33,10 +33,10 @@ export const allProjects = [
       "This is a web portfolio for a designer client. They wanted a way to showcase their design skills and signal to potential employers that they were fit for the job.",
     desc: "This is a web portfolio for a designer client. They wanted a way to showcase their design skills and signal to potential employers that they were fit for the job. I was interested in this project because, the client required some animations on the site and I felt it would be a great avenue to finally get over my phobia of CSS 😅",
     technologiesUsed: [
-      "NextJS, ",
-      "TypeScript, ",
-      "Framer Motion, ",
-      "Styled Components.",
+      "NextJS ",
+      "TypeScript ",
+      "Framer Motion ",
+      "Styled Components",
     ],
     lessonsLearned: [
       "Learned how to use styled components",
