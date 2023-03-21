@@ -111,6 +111,7 @@ const Projects = () => {
                 </span>
               ))}
             </div>
+            <br />
             <div>{project.shortDesc}</div>
             <br />
             <button

@@ -8,7 +8,8 @@
   margin: 2rem 0;
 }
 .tech__stack__skill {
-  height: 35px;
+  height:40px;
+  width: 100px;
 }
 
 .tech__stack__skill:hover {
@@ -19,6 +20,6 @@
 @media only screen and (min-width: 768px) {
   .tech__stack {
     grid-template-columns: repeat(7, 1fr);
-    gap: 1rem;
+    gap: 2rem;
   }
 }

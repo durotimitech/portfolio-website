@@ -51,9 +51,9 @@ const About = () => {
             <br />
             <div>
               When I am not coding, or trying to solve a problem 😉 ( cuz
-              there&apos;s always problems to solve), I make
+              there&apos;s always problems to solve), I also make
               <span className="primary"> films </span>
-              and take pictures.
+              and take  <span className="primary"> pictures</span>.
             </div>
           </div>
         </div>

@@ -1,9 +1,14 @@
-Highlight the problem you were trying to solve: Start by explaining the problem you were trying to solve with your project. Explain the motivation behind the project and the goals you were trying to achieve. This will give the potential employer an understanding of the context in which you were working.
+- Highlight the problem you were trying to solve
+Start by explaining the problem you were trying to solve with your project. Explain the motivation behind the project and the goals you were trying to achieve. This will give the potential employer an understanding of the context in which you were working.
 
-Explain the technologies you used: List out the different technologies you used to build the project, including both front-end and back-end technologies. This will give potential employers an idea of your technical proficiency and knowledge.
+- Explain the technologies you used
+List out the different technologies you used to build the project, including both front-end and back-end technologies. This will give potential employers an idea of your technical proficiency and knowledge.
 
-Discuss the design and architecture of the project: Explain how you designed and architected the project. Highlight any design patterns or architectural decisions you made and why you made them. This will demonstrate your ability to think critically about software design.
+- Discuss the design and architecture of the project
+Explain how you designed and architected the project. Highlight any design patterns or architectural decisions you made and why you made them. This will demonstrate your ability to think critically about software design.
 
-Describe your development process: Discuss your development process, including any methodologies or frameworks you used. Explain how you managed source control, how you tested your code, and how you integrated new features. This will show potential employers that you are a skilled developer who can work efficiently.
+- Describe your development process 
+Discuss your development process, including any methodologies or frameworks you used. Explain how you managed source control, how you tested your code, and how you integrated new features. This will show potential employers that you are a skilled developer who can work efficiently.
 
-Share any challenges you faced: Be transparent about any challenges you faced while working on the project. Explain how you overcame them and what you learned from the experience. This will demonstrate your problem-solving skills and your ability to learn from mistakes.
+- Share any challenges you faced 
+Be transparent about any challenges you faced while working on the project. Explain how you overcame them and what you learned from the experience. This will demonstrate your problem-solving skills and your ability to learn from mistakes.

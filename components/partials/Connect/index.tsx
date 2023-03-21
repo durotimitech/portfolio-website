@@ -1,7 +1,7 @@
 import { GithubOutlined, LinkedinOutlined } from "@ant-design/icons";
 import { Form, Input } from "antd";
 import TextArea from "antd/lib/input/TextArea";
-import React, { useContext, useEffect, useRef } from "react";
+import React, { useContext, useEffect, useRef, useState } from "react";
 import Animations from "~/utilities/animations/Animations";
 import { NavigationContext } from "~/utilities/context/NavigationContext";
 import { externalLinks, sections } from "~/utilities/data";
@@ -10,6 +10,8 @@ import classes from "./Connect.module.css";
 
 const Connect = () => {
   const targetSection = useRef(null);
+
+  const [currentYear, setCurrentYear] = useState(new Date().getFullYear())
   const [form] = Form.useForm();
   const handleSubmit = () => {};
 
@@ -44,7 +46,7 @@ const Connect = () => {
           </span>
         </div>
         <footer className={classes.footer}>
-          <div className="fs-md">© 2021 Oluwadurotimi Mejabi</div>
+          <div className="fs-md">© {currentYear} Oluwadurotimi Mejabi</div>
           <div className={classes.footer__socials}>
             <a href={externalLinks.LINKEDIN} target={"_blank"} rel="noreferrer">
               <LinkedinOutlined className="fs-l" />

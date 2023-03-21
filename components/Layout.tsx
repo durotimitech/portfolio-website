@@ -10,10 +10,10 @@ const Layout: React.FC<IProps> = ({ children }) => {
   return (
     <>
       <Head>
-        <title>Mejabi Durotimi | Self taught Software Engineer</title>
+        <title>Mejabi Durotimi | Software Engineer</title>
       </Head>
       <NavBar />
-      {children}{" "}
+      {children}
     </>
   );
 };

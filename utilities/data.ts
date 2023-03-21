@@ -8,8 +8,8 @@ export const sections = {
 export const externalLinks = {
   EMAIL: "durotimitech@gmail.com",
   GITHUB: "https://github.com/durotimitech",
-  LINKEDIN: "https://www.linkedin.com/in/durotimi-mejabi/",
-  CV: "https://drive.google.com/file/d/17heWV49P-n03XtDqPlOZCxXGWp3WFXI6/view?usp=sharing",
+  LINKEDIN: "https://rebrand.ly/durotimi-linkedin",
+  CV: "https://rebrand.ly/durotimi-swe-cv",
 };
 
 export const mySkills = [
@@ -25,9 +25,9 @@ export const mySkills = [
 export const allProjects = [
   {
     id: 0,
-    title: "Designer Web Portfolio",
+    title: "UI/UX Designer Web Portfolio",
     demo: "/gifs/donald-portfolio-demo.gif",
-    liveLink: "https://rebrand.ly/ebube-portfolio",
+    liveLink: "https://rebrand.ly/donald-portfolio",
     github: "https://github.com/durotimitech/donald-portfolio",
     shortDesc:
       "This is a web portfolio for a designer client. They wanted a way to showcase their design skills and signal to potential employers that they were fit for the job.",
@@ -47,7 +47,4 @@ export const allProjects = [
       "Incorporate some 3D renderings",
     ],
   },
-  // { id: 0, title: "Oxymon Solutions" },
-  // { id: 0, title: "ABC Farms" },
-  // { id: 0, title: "Personal Website" },
 ];
